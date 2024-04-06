@@ -1,0 +1,253 @@
+html {
+    font-size: 16px;
+    
+}
+
+
+body {
+    background-color: #24305e
+  }
+  
+  .box {
+    position: fixed;
+    top: 0;
+    transform: rotate(80deg); 
+    left: 0;
+  }
+  
+  .wave {
+    position: absolute;
+    opacity: .4;
+    width: 1500px;
+    height: 1300px;
+    margin-left: -150px;
+    margin-top: -250px;
+    border-radius: 43%;
+  }
+  
+  @keyframes rotate {
+    from {transform: rotate(0deg);}
+    from {transform: rotate(360deg);}
+  }
+  
+  .wave.-one {
+    animation: rotate 10000ms infinite linear;
+    opacity: 5%;
+    background: white;
+  }
+  
+  .wave.-two {
+    animation: rotate 6000ms infinite linear;
+    opacity: 10%;
+    background: white;
+  }
+  
+
+
+.icon {
+    height: 20px;
+    width: 20px;
+    fill: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+input {
+    border: none;
+}
+
+.container-1 ul{
+    
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.container-1 ul li {
+    list-style-type: none;
+    color: white;
+    font-size: 1em;
+  }
+  .container-1 ul li a{
+    font-size: 2em;
+  }
+
+/* ===========================================================================
+    HEADER
+   ===========================================================================
+*/
+
+
+
+.header__form {
+    display: flex;
+}
+
+.header__form input {
+    outline: none;
+    color: #24305e;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header__form button {
+    padding: 0.375rem 0.75rem;
+    border: none;
+    background: black;
+}
+
+
+
+
+/* ===========================================================================
+    Weather
+   ===========================================================================
+*/
+
+.weather {
+    padding-top: 3rem;
+    text-align: center;
+    
+}
+
+.weather__message {
+    padding-top: 7rem;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.4;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.weather .location {
+    color: white;
+}
+
+.weather__summary {
+    margin-top: 3rem;
+    color: white;
+}
+.weather__celsius-value{
+    color: wheat;
+}
+.weather__summary .weather-icon {
+    font-size: 3rem;
+    margin-right: 1.4rem;
+}
+
+.weather__celsius-value {
+    font-size: 5rem;
+}
+.weather__celsius-value  .wi-celsius {
+    font-size: 8rem;
+    vertical-align: middle;
+}
+
+.weather__miscellaneous{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+
+.weather__miscellaneous li:first-child {
+    margin-right: 2rem;
+}
+
+.weather__miscellaneous span {
+    color: wheat;
+    margin-left: 1rem;
+}
+
+
+/* ===========================================================================
+    Forecast
+   ===========================================================================
+*/
+
+
+.forecast__day {
+    background: rgb(255, 255, 255);
+    width: 200px;
+    color: #24305e;
+    text-align: center;
+    box-shadow: 1px 1px 3px 1px white;
+    display: flex;
+    margin-top: 20px; 
+    margin-left: 20px;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+}
+
+.forecast__day  ul li{
+    list-style: none;
+}
+.day-container{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+}
+
+#copy{
+    margin-top: 20px;
+}
+.forecast__date {
+    font-size: 1.3rem;
+}
+.forecast__icon {
+    font-size: 3.7rem;
+}
+
+.forecast__temp {
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 700px) {
+   
+    .container-1 ul{
+    
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .container-1 ul li{
+        margin-bottom: 20px;
+    }
+    .forecast__day {
+        background: white;
+        color: #24305e;
+        text-align: center;
+        box-shadow: 1px 1px 3px 1px white;
+        display: flex;
+        margin-top: 20px; 
+        justify-content: center;
+        flex-direction: row;
+        
+    }
+    .forecast__day  ul li{
+        list-style: none;
+    }
+
+}
+
+
+#copy{
+    color: #fff;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#copy span{
+
+    color: wheat;
+}
